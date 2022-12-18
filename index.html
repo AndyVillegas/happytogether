@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+        * {
+            box-sizing: border-box;
+            --pink: #F8D0CB;
+            margin: 0;
+            padding: 0;
+            font-size: 12px;
+        }
+
+        html {
+            background-color: var(--pink);
+        }
+
+        .words {
+            height: 100vh;
+            position: fixed;
+            z-index: 1;
+            display: none;
+            width: 100%;
+            top: 0;
+            left: 0;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .word {
+            font-family: 'Fjalla One', sans-serif;
+            font-size: 4em;
+            font-weight: 800;
+            color: #E86460;
+            display: none;
+        }
+
+        #card {
+            max-width: 21cm;
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #frame {
+            background-color: var(--pink);
+            height: 100%;
+            width: 100%;
+            padding: 3.5em;
+            transition: opacity 0.5s linear 0.5s;
+        }
+
+        #content {
+            background-color: white;
+            width: 0;
+            height: 0;
+            overflow: hidden;
+        }
+
+        #hearts {
+            z-index: 2;
+            position: absolute;
+        }
+        #title {
+            font-family: 'Bad Script', cursive;
+            color: var(--pink);
+            font-size: 3em;
+            display: block;
+        }
+        .squirrel {
+            height: 3em;
+            width: 3em;
+        }
+        .body {
+            font-family: 'Bad Script', cursive;
+            font-size: 1.7em;
+            text-align: justify;
+        }
+        .body strong {
+            font-size: 1em;
+        }
+        .album-title {
+            font-family: 'Bad Script', cursive;
+            color: var(--pink);
+            font-size: 3em;
+            display: block;
+        }
+        .album-photo {
+            width: 200px;
+            border: 5px solid var(--pink);
+        }
+        .album-photo:nth-child(2n){
+            transform: rotate(-15deg);
+        }
+        .album-photo:nth-child(3n){
+            transform: rotate(15deg);
+        }
+        .album-photo:nth-child(5n){
+            transform: rotate(25deg);
+        }
+        .album-photo:nth-child(7n){
+            transform: rotate(-25deg);
+        }
+        .album-photo:nth-child(11n){
+            transform: rotate(10deg);
+        }
+        .text-final{
+            font-family: 'Bad Script', cursive;
+            margin-top: 40px;
+            font-size: 1.2em;
+        }
+        #btn-play {
+            height: 160px;
+            width: 160px;
+            background-repeat: no-repeat;
+            font-family: 'Bad Script', cursive;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            background-position: center;
+            color: white;
+            margin-right: auto;
+            margin-left: auto;
+            display: block;
+            background-color: transparent;
+            background-image: url(icons/heart_icon.svg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="words">
+        <div class="word" id="id_i">I</div>
+        <div class="word" id="id_can">Can</div>
+        <div class="word" id="id_see">See</div>
+        <div class="word" id="id_me">Me</div>
+        <div class="word" id="id_loving">Loving</div>
+        <div class="word" id="id_nobody">Nobody</div>
+        <div class="word" id="id_but">But</div>
+        <div class="word" id="id_you">You</div>
+        <div class="word" id="id_for_all_my_life">For All My Life</div>
+    </div>
+    <div id="card">
+        <div style="overflow: hidden;" id="frame">
+            <button id="btn-play">Toca aquí para enamorarte :3</button>
+            <div id="content">
+                <h1 id="title">PARA MI ARDILLITA <img class="squirrel" src="icons/squirrel_icon.svg"/></h1>
+                <div class="body">
+                    Mi bebé, al inicio tenía pensado hacerte una carta así normal :3 pero dije hmmm, y ¿qué tal si en vez de darle una carta, mejor le hago algo con lo que mejor sé hacer?, y pues aquí estoy, creo que la mejor forma de darte o demostrarte mi amor es hacerlo desde mi lado, que sientas mi esencia en este detallito :3, empezamos.<br>Han sido días demasiado dífíciles, a veces peleas, discusiones y bueno cosas que en este momento no vienen al caso mencionarlas, sé que a veces te levanto muchas dudas tal vez mi manera de actuar lo hace sin yo darme cuenta, pero ten seguro que intento ser conciente de eso y trato de evitarlo, y pues bueno, ten en cuenta esto <strong>jamás me daré por vencido</strong>, siempre verás que daré todo de mi hasta el último momento, ¿por qué?, porque de eso se trata el amor de dar todo de no abandonar y pues <strong>nunca te abandonaré</strong>, siempre tendrás en mi un apoyo, como he intentado serlo en todos estos años que venimos siendo pareja, porque más que eso como siempre te he dicho <strong>somos un equipo</strong>. <br>Te amo un chingo amor, en las buenas en las malas y en las malísimas estaré para ti, sé que eres la mujer que quiero para mi vida, en la que estoy seguro que puedo confiar y no me dará la espalda y que espero que siempre sea una de las voces que me inspira a seguir adelante, no mentiré ha sido duro a veces, pero sé que tú y yo hacemos un gran equipo y podemos salir adelante, ya lo hemos hecho en varios aspectos, y estamos creciendo juntos, tanto en nuestra relación como nuestra carrera de vida, y así seguiremos :3, sé que llegará el momento en el que tu y yo ya podamos estar juntos y una noche antes de dormir, recordaremos todos aquellos momentos que pusimos de nuestra parte para que todo esto salga adelante. <br> Y bueno para cerrar con broche de oro esta cartita :3 te dejo un pequeño recorrido de nuestras vidas.
+                </div>
+                <div class="album">
+                    <h2 class="album-title">NUESTROS MOMENTOS</h2>
+                    <div class="album-section">
+                        <h3 class="album-title">2016</h3>
+                        <img class="album-photo" loading="lazy" src="photos/2016-1.jpg"/>
+                        <img class="album-photo" loading="lazy" src="photos/2016-2.jpg"/>
+                        <img class="album-photo" loading="lazy" src="photos/2016-3.jpg"/>
+                    </div>
+                    <div class="album-section">
+                        <h3 class="album-title">2017</h3>
+                        <span style="display: none;" class="album-photo"></span>
+                        <img class="album-photo" loading="lazy" src="photos/2017-1.jpg"/>
+                        <img class="album-photo" loading="lazy" src="photos/2017-2.jpg"/>
+                        <img class="album-photo" loading="lazy" src="photos/2017-3.jpg"/>
+                        <img class="album-photo" loading="lazy" src="photos/2017-4.jpg"/>
+                    </div>
+                    <div class="album-section">
+                        <h3 class="album-title">2018</h3>
+                        <img class="album-photo" loading="lazy" src="photos/2018-1.jpg"/>
+                        <img class="album-photo" loading="lazy" src="photos/2018-2.jpg"/>
+                    </div>
+                    <div class="album-section">
+                        <h3 class="album-title">2019</h3>
+                        <span style="display: none;" class="album-photo"></span>
+                        <img class="album-photo" loading="lazy" src="photos/2019-1.jpg"/>
+                        <img class="album-photo" loading="lazy" src="photos/2019-2.jpg"/>
+                        <img class="album-photo" loading="lazy" src="photos/2019-3.jpg"/>
+                        <img class="album-photo" loading="lazy" src="photos/2019-4.jpg"/>
+                        <img class="album-photo" loading="lazy" src="photos/2019-5.jpg"/>
+                    </div>
+                    <div class="album-section">
+                        <h3 class="album-title">2020</h3>
+                        <img class="album-photo" loading="lazy" src="photos/2020-1.jpg"/>
+                        <img class="album-photo" loading="lazy" src="photos/2020-2.jpg"/>
+                        <img class="album-photo" loading="lazy" src="photos/2020-3.jpg"/>
+                        <img class="album-photo" loading="lazy" src="photos/2020-4.jpg"/>
+                        <img class="album-photo" loading="lazy" src="photos/2020-5.jpg"/>
+                        <img class="album-photo" loading="lazy" src="photos/2020-6.jpg"/>
+                    </div>
+                    <div class="album-section">
+                        <h3 class="album-title">2021</h3>
+                        <img class="album-photo" loading="lazy" src="photos/2021-1.jpg"/>
+                        <img class="album-photo" loading="lazy" src="photos/2021-2.jpg"/>
+                        <img class="album-photo" loading="lazy" src="photos/2021-3.jpg"/>
+                        <img class="album-photo" loading="lazy" src="photos/2021-4.jpg"/>
+                        <img class="album-photo" loading="lazy" src="photos/2021-5.jpg"/>
+                        <img class="album-photo" loading="lazy" src="photos/2021-6.jpg"/>
+                        <img class="album-photo" loading="lazy" src="photos/2021-7.jpg"/>
+                        <img class="album-photo" loading="lazy" src="photos/2021-8.jpg"/>
+                    </div>
+                    <div class="album-section">
+                        <h3 class="album-title">2022</h3>
+                        <img class="album-photo" loading="lazy" src="photos/2022-1.jpg"/>
+                        <img class="album-photo" loading="lazy" src="photos/2022-2.jpg"/>
+                        <img class="album-photo" loading="lazy" src="photos/2022-3.jpg"/>
+                        <img class="album-photo" loading="lazy" src="photos/2022-4.jpg"/>
+                        <img class="album-photo" loading="lazy" src="photos/2022-5.jpg"/>
+                    </div>
+                </div>
+                <div class="text-final">
+                    Gracias por todos y cada uno de los momentos que compartimos, espero que este amor dure por lo que queda de nuestras vidas y que no se apague, que tengamos muchos más momentos que compartir.
+                    Te amo ❤️ <br>Att. Andy Villegas
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const words = document.querySelector('.words');
+        const content = document.querySelector("#content");
+        const frame = document.querySelector("#frame");
+        const happyTogetherMp3 = new Audio('./music/happy-together.mp3');
+        const btnPlay = document.querySelector("#btn-play");
+        btnPlay.addEventListener('click', () => {
+            words.style.display = 'flex';
+            frame.style.opacity = 0;
+            frame.style.display = 'none';
+            happyTogetherMp3.play()
+            .then(() => {
+                btnPlay.style.display = 'none';
+                content.style.height = '100%';
+                content.style.width = '100%';
+                content.style.padding = '4em';
+                frame.style.display = 'block';
+                setTimeout(() => {
+                    frame.style.opacity = 1;
+                },2000);
+                setTimeout(() => {
+                    i.style.display = 'block';
+                },45500);
+                setTimeout(() => {
+                    can.style.display = 'block';
+                    i.style.display = 'none';
+                },46000);
+                setTimeout(() => {
+                    see.style.display = 'block';
+                    can.style.display = 'none';
+                },46500);
+                setTimeout(() => {
+                    me.style.display = 'block';
+                    see.style.display = 'none';
+                },47000);
+                setTimeout(() => {
+                    loving.style.display = 'block';
+                    me.style.display = 'none';
+                },47500);
+                setTimeout(() => {
+                    nobody.style.display = 'block';
+                    loving.style.display = 'none';
+                },48000);
+                setTimeout(() => {
+                    but.style.display = 'block';
+                    nobody.style.display = 'none';
+                },49000);
+                setTimeout(() => {
+                    you.style.display = 'block';
+                    but.style.display = 'none';
+                },49500);
+                setTimeout(() => {
+                    for_all_my_life.style.display = 'block';
+                    you.style.display = 'none';
+                },50500);
+                setTimeout(() => {
+                    words.style.display = 'none';
+                },53000);
+            });
+        });
+        // Words
+        const i = document.querySelector('#id_i');
+        const can = document.querySelector('#id_can');
+        const see = document.querySelector('#id_see');
+        const me = document.querySelector('#id_me');
+        const loving = document.querySelector('#id_loving');
+        const nobody = document.querySelector('#id_nobody');
+        const but = document.querySelector('#id_but');
+        const you = document.querySelector('#id_you');
+        const for_all_my_life = document.querySelector('#id_for_all_my_life');
+    </script>
+</body>
+
+</html>
